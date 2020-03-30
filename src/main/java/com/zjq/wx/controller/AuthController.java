@@ -25,7 +25,7 @@ import java.util.Map;
 
 /**
  * @description: 微信开发服务器配置
- * @author: BadGuy4
+ * @author: BadGuy5
  * @date: 2020-03-23 22:00
  **/
 @Slf4j

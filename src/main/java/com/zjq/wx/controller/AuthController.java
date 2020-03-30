@@ -79,7 +79,7 @@ public class AuthController {
         log.info("--FromUserName:"+request.getParameter("FromUserName"));
         log.info("--openId:"+openId);
         //return DecryptUtil.getResponse(request.getParameter("nonce"),request.getParameter("openid"));
-        return "<xml><ToUserName><![CDATA["+fromUserName+"]]></ToUserName><FromUserName><![CDATA["+toUserName+"]]></FromUserName><CreateTime>12345678</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[jenkins自动部署成功！]]></Content></xml>";
+        return "<xml><ToUserName><![CDATA["+fromUserName+"]]></ToUserName><FromUserName><![CDATA["+toUserName+"]]></FromUserName><CreateTime>12345678</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[jenkins自动部署最后一次测试成功！]]></Content></xml>";
     }
 
 }

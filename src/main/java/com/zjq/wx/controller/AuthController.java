@@ -59,6 +59,7 @@ public class AuthController {
         ins.close();
         String toUserName = map.get("ToUserName");
         String fromUserName = map.get("FromUserName");
+        String content = map.get("Content");
         log.info("ToUserName:"+toUserName);
         log.info("FromUserName:"+fromUserName);
         Enumeration<String> enumeration = request.getParameterNames();
@@ -79,7 +80,7 @@ public class AuthController {
         log.info("--FromUserName:"+request.getParameter("FromUserName"));
         log.info("--openId:"+openId);
         //return DecryptUtil.getResponse(request.getParameter("nonce"),request.getParameter("openid"));
-        return "<xml><ToUserName><![CDATA["+fromUserName+"]]></ToUserName><FromUserName><![CDATA["+toUserName+"]]></FromUserName><CreateTime>12345678</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[jenkins自动部署能不能成就看这一波了!!!!]]></Content></xml>";
+        return "<xml><ToUserName><![CDATA["+fromUserName+"]]></ToUserName><FromUserName><![CDATA["+toUserName+"]]></FromUserName><CreateTime>12345678</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA["+content+"]]></Content></xml>";
     }
 
 }
